@@ -1,5 +1,7 @@
-php:7.2:
-  image: adduc/ubuntu-php:7.2-build
+php:7.3:
+  image:
+    name: adduc/nginx-php:alpine-3.12-development
+    entrypoint: [""]
   cache:
     paths:
     - vendor
@@ -18,8 +20,10 @@ php:7.2:
     paths:
     - artifacts
 
-php:7.3:
-  image: adduc/ubuntu-php:7.3-build
+php:7.4:
+  image:
+    name: adduc/nginx-php:alpine-edge-development
+    entrypoint: [""]
   cache:
     paths:
     - vendor
@@ -37,9 +41,10 @@ php:7.3:
   artifacts:
     paths:
     - artifacts
+
 
 deploy:prod:
-  image: adduc/ubuntu-php:7.2-build
+  image: adduc/ci-deploy
   stage: deploy
   script:
   - eval $(ssh-agent -s)
