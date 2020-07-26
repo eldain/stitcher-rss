@@ -8,7 +8,7 @@ Requirements
 ---
 
 * MySQL >= 5.5
-* PHP >= 7.1
+* PHP >= 7.2
 * Composer
 * NodeJS and Yarn
 
