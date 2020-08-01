@@ -92,9 +92,6 @@
                 </div>
                 @else
                 <div class="navbar-item">
-                    <a class="navbar-item button is-primary" href="/login">
-                        Login to Stitcher
-                    </a>
                 </div>
                 @endif
             </div>

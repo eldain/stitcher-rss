@@ -13,13 +13,13 @@
 
 $router->get('/', 'PageController@index');
 
-$router->get('/login', 'UserController@login');
-$router->post('/login', 'UserController@login');
+// $router->get('/login', 'UserController@login');
+// $router->post('/login', 'UserController@login');
 $router->get('/logout', 'UserController@logout');
 
-$router->group(['middleware' => 'auth:session'], function () use ($router) {
-    $router->get('/shows', 'ShowController@shows');
-});
+// $router->group(['middleware' => 'auth:session'], function () use ($router) {
+//     $router->get('/shows', 'ShowController@shows');
+// });
 
 $router->group(['middleware' => 'auth:basic'], function () use ($router) {
     $router->get('/shows/{feed_id:\d+}/feed', 'ShowController@feed');
