@@ -7,5 +7,9 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.44.0",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "kind-of": "^6.0.3",
+    "set-value": "^3.0.2"
   }
 }
