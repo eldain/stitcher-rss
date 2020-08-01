@@ -1,19 +1,18 @@
-Unofficial RSS Feeds for Stitcher Premium
-===
+# Unofficial RSS Feeds for Stitcher Premium
 
 Source code for the [Unofficial RSS Feeds for Stitcher Premium](https://stitcher-rss.128.io)
 website.
 
-Requirements
----
+Originally hosted at: [GitLab](https://gitlab.com/stitcher-rss/stitcher-rss)
 
-* MySQL >= 5.5
-* PHP >= 7.2
-* Composer
-* NodeJS and Yarn
+## Requirements
 
-Installation
----
+-   MySQL >= 5.5
+-   PHP >= 7.2
+-   Composer
+-   NodeJS and Yarn
+
+## Installation
 
 ```sh
 # Clone Repository
@@ -34,8 +33,7 @@ nano .env
 ./artisan migrate
 ```
 
-Updating
----
+## Updating
 
 ```sh
 git pull
@@ -44,7 +42,6 @@ composer webpack
 ./artisan migrate
 ```
 
-License
----
+## License
 
 This project is licensed under the terms of the [MIT license](LICENSE.md).
